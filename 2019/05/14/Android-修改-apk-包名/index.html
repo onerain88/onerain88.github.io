@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Android,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="工具 apktool：用于解包和打包。 VSCode 或者其他编辑器：用于关键词的查找和替换。 keytool：用于生成签名文件。 jarsigner：用于签名 apk。  解包1apktool d xxx.apk 修改apktool.ymlpackageInfo 节点下增加两个字段：  cur_package: xx.yy.zz orig_package: xx.yy.zz  AndroidMa">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/05/07/hello-world/index.html">
+<meta property="og:title" content="Android 修改 apk 包名">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/Android-修改-apk-包名/index.html">
 <meta property="og:site_name" content="开发之路">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="工具 apktool：用于解包和打包。 VSCode 或者其他编辑器：用于关键词的查找和替换。 keytool：用于生成签名文件。 jarsigner：用于签名 apk。  解包1apktool d xxx.apk 修改apktool.ymlpackageInfo 节点下增加两个字段：  cur_package: xx.yy.zz orig_package: xx.yy.zz  AndroidMa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-07T02:48:15.483Z">
+<meta property="og:updated_time" content="2019-05-15T10:35:22.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Android 修改 apk 包名">
+<meta name="twitter:description" content="工具 apktool：用于解包和打包。 VSCode 或者其他编辑器：用于关键词的查找和替换。 keytool：用于生成签名文件。 jarsigner：用于签名 apk。  解包1apktool d xxx.apk 修改apktool.ymlpackageInfo 节点下增加两个字段：  cur_package: xx.yy.zz orig_package: xx.yy.zz  AndroidMa">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/07/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/Android-修改-apk-包名/">
 
 
 
 
 
-  <title>Hello World | 开发之路</title>
+  <title>Android 修改 apk 包名 | 开发之路</title>
   
 
 
@@ -242,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/Android-修改-apk-包名/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zyu">
@@ -259,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Android 修改 apk 包名</h1>
         
 
         <div class="post-meta">
@@ -271,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-07T10:48:15+08:00">
-                2019-05-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-14T18:47:56+08:00">
+                2019-05-14
               </time>
             
 
@@ -309,15 +310,37 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
+<li>apktool：用于解包和打包。</li>
+<li>VSCode 或者其他编辑器：用于关键词的查找和替换。</li>
+<li>keytool：用于生成签名文件。</li>
+<li>jarsigner：用于签名 apk。</li>
+</ul>
+<h2 id="解包"><a href="#解包" class="headerlink" title="解包"></a>解包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apktool d xxx.apk</span><br></pre></td></tr></table></figure>
+<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><h3 id="apktool-yml"><a href="#apktool-yml" class="headerlink" title="apktool.yml"></a>apktool.yml</h3><p>packageInfo 节点下增加两个字段：</p>
+<ul>
+<li>cur_package: xx.yy.zz</li>
+<li>orig_package: xx.yy.zz</li>
+</ul>
+<h3 id="AndroidManifest-xml"><a href="#AndroidManifest-xml" class="headerlink" title="AndroidManifest.xml"></a>AndroidManifest.xml</h3><ul>
+<li>根节点中的包名修改 package=”xx.yy.zz”。</li>
+<li>生命的 Activity，Service，Provider 等包含包名的，也需要全文替换。</li>
+</ul>
+<h3 id="res-目录"><a href="#res-目录" class="headerlink" title="res 目录"></a>res 目录</h3><ul>
+<li>如果有些 View 使用了自定义的类型，则需要对包名进行全文替换。</li>
+</ul>
+<h3 id="smali"><a href="#smali" class="headerlink" title="smali"></a>smali</h3><ul>
+<li>修改包名对应的目录路径</li>
+<li>smali 中的包名为 Lxx/yy/zz，注意签名的 L</li>
+</ul>
+<h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apktool b xxx -o yyy.apk</span><br></pre></td></tr></table></figure>
+<p>xxx 为解包的目录。<br>yyy.apk 为重打包的 apk。</p>
+<h2 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h2><h3 id="生成签名文件"><a href="#生成签名文件" class="headerlink" title="生成签名文件"></a>生成签名文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -v -keystore cert.keystore -<span class="built_in">alias</span> xxx -keyalg RSA -keysize 2048 -validity 10000</span><br></pre></td></tr></table></figure>
+<ul>
+<li>cert.keystore：生成的证书文件</li>
+<li>xxx：证书别名</li>
+</ul>
+<h3 id="重新签名"><a href="#重新签名" class="headerlink" title="重新签名"></a>重新签名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -keystore cert.keystore -signedjar imeiju-crack-signed.apk imeiju-crack.apk imeiju</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -333,6 +356,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
+        </div>
+      
 
       
       
@@ -342,15 +371,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/07/Unity-单元测试/" rel="next" title="Unity 单元测试">
+                <i class="fa fa-chevron-left"></i> Unity 单元测试
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/07/Unity-单元测试/" rel="prev" title="Unity 单元测试">
-                Unity 单元测试 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -473,7 +502,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解包"><span class="nav-number">2.</span> <span class="nav-text">解包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改"><span class="nav-number">3.</span> <span class="nav-text">修改</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#apktool-yml"><span class="nav-number">3.1.</span> <span class="nav-text">apktool.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AndroidManifest-xml"><span class="nav-number">3.2.</span> <span class="nav-text">AndroidManifest.xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#res-目录"><span class="nav-number">3.3.</span> <span class="nav-text">res 目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#smali"><span class="nav-number">3.4.</span> <span class="nav-text">smali</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包"><span class="nav-number">4.</span> <span class="nav-text">打包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#签名"><span class="nav-number">5.</span> <span class="nav-text">签名</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成签名文件"><span class="nav-number">5.1.</span> <span class="nav-text">生成签名文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重新签名"><span class="nav-number">5.2.</span> <span class="nav-text">重新签名</span></a></li></ol></li></ol></div>
             
 
           </div>
