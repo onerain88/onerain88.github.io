@@ -340,7 +340,13 @@
 <li>cert.keystore：生成的证书文件</li>
 <li>xxx：证书别名</li>
 </ul>
-<h3 id="重新签名"><a href="#重新签名" class="headerlink" title="重新签名"></a>重新签名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -keystore cert.keystore -signedjar imeiju-crack-signed.apk imeiju-crack.apk imeiju</span><br></pre></td></tr></table></figure>
+<h3 id="重新签名"><a href="#重新签名" class="headerlink" title="重新签名"></a>重新签名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -keystore cert.keystore -signedjar yyy-signed.apk yyy.apk xxx</span><br></pre></td></tr></table></figure>
+<ul>
+<li>cert.keystore 是上一步生成的证书文件</li>
+<li>yyy-signed.apk 是签名后的 apk</li>
+<li>yyy.apk 是重新打包的 apk</li>
+<li>xxx 是证书别名</li>
+</ul>
 
           
         
