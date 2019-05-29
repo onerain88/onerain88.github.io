@@ -483,6 +483,7 @@
 <p>在这个示例中，通过</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (!flag) &#123;</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>保证这个测试用例不会完成，在 Task.Delay() 回调中，通过设置 flag 使其完成测试。<br>如果异步时间较长，可能需要 Timeout 属性来标记单元测试的超时时间。</p>
+<p><a href="https://github.com/onerain88/UnityUnitTest" target="_blank" rel="noopener">示例工程</a></p>
 
           
         

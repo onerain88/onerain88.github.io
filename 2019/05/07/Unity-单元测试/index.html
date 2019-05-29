@@ -88,7 +88,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/05/07/Unity-单元测试/menu.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/07/Unity-单元测试/assembly-definition.png">
-<meta property="og:updated_time" content="2019-05-09T09:54:23.820Z">
+<meta property="og:updated_time" content="2019-05-29T09:03:19.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity 单元测试">
 <meta name="twitter:description" content="Unity Editor 引入了 NUnit 库来提供单元测试功能，可以通过 Menu-&amp;gt;Window-&amp;gt;General-&amp;gt;Test Runner 打开单元测试面板。  除了传统的 NUnit 的一些测试方法外，Unity 还加入了特有的测试工具类，如 IMonoBehaviourTest，MonoBehaviourTest 等。 基础用法基础用法和 NUnit 相差不大，如最简">
@@ -329,6 +329,7 @@
 <p>在这个示例中，通过</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (!flag) &#123;</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>保证这个测试用例不会完成，在 Task.Delay() 回调中，通过设置 flag 使其完成测试。<br>如果异步时间较长，可能需要 Timeout 属性来标记单元测试的超时时间。</p>
+<p><a href="https://github.com/onerain88/UnityUnitTest" target="_blank" rel="noopener">示例工程</a></p>
 
       
     </div>
