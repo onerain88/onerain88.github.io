@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="开发之路">
 <meta property="og:description" content="Photon 提供了一种 Hashtable 的结构用于数据传输，Hashtable 类似于 Dictionary&amp;lt;object, object&amp;gt; 内置支持的数据类型Photon 用 type_info 来标记数据的类型信息。  基本类型只需要一个字节标记类型信息 大多数容器类型只需要一个字节表示容器类型的信息（元素是 object 类型），如 Hashtable, Object[]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-25T02:47:26.373Z">
+<meta property="og:updated_time" content="2019-07-31T04:02:50.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Photon 序列化">
 <meta name="twitter:description" content="Photon 提供了一种 Hashtable 的结构用于数据传输，Hashtable 类似于 Dictionary&amp;lt;object, object&amp;gt; 内置支持的数据类型Photon 用 type_info 来标记数据的类型信息。  基本类型只需要一个字节标记类型信息 大多数容器类型只需要一个字节表示容器类型的信息（元素是 object 类型），如 Hashtable, Object[]">
@@ -309,14 +309,14 @@
       
 
       
-        <p>Photon 提供了一种 Hashtable 的结构用于数据传输，Hashtable 类似于 Dictionary&lt;object, object&gt;</p>
+        <p>Photon 提供了一种 <code>Hashtable</code> 的结构用于数据传输，Hashtable 类似于 <code>Dictionary&lt;object, object&gt;</code></p>
 <h2 id="内置支持的数据类型"><a href="#内置支持的数据类型" class="headerlink" title="内置支持的数据类型"></a>内置支持的数据类型</h2><p>Photon 用 <code>type_info</code> 来标记数据的类型信息。</p>
 <ul>
 <li>基本类型只需要一个字节标记类型信息</li>
-<li>大多数容器类型只需要一个字节表示容器类型的信息（元素是 object 类型），如 Hashtable, Object[] 和 Byte[]</li>
+<li>大多数容器类型只需要一个字节表示容器类型的信息（元素是 <code>object</code> 类型），如 <code>Hashtable</code>, <code>Object[]</code> 和 <code>Byte[]</code></li>
 <li>强类型的容器还需要一个字节表示元素类型</li>
-<li>所有的容器类型还需要 short 类型表示容器的长度，Byte[] 的长度是 int 类型的</li>
-<li>string[] 不能包含 null，需要使用 “” 表示</li>
+<li>所有的容器类型还需要 <code>short</code> 类型表示容器的长度，<code>Byte[]</code> 的长度是 <code>int</code> 类型的</li>
+<li><code>string[]</code> 不能包含 <code>null</code>，需要使用 “” 表示</li>
 </ul>
 <h2 id="自定义类型"><a href="#自定义类型" class="headerlink" title="自定义类型"></a>自定义类型</h2><p>对于自定义类型的数据，Photon 支持指定序列化和反序列化方法，并通过 Photon 的接口注册。</p>
 <p>自定义类型使用两个字节表示类型信息，一个字节表示是「自定义类型」；另一个字节表示是「自定义类型编码」。所以最多支持 256 种自定义类型。</p>
